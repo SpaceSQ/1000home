@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/about", "destination": "/aboutus.html" },
+    { "source": "/aboutus", "destination": "/aboutus.html" },
+    { "source": "/support", "destination": "/index.html#sec-support" },
+    { "source": "/privacy", "destination": "/index.html#sec-support" },
+    { "source": "/terms", "destination": "/index.html#sec-support" },
+    { "source": "/agent-api", "destination": "/index.html#sec-agent" }
+  ]
+}

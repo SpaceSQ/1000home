@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "1000Home & VibeDrop Shopping Guide",
+  "name_for_model": "thousand_home_vibe_shopping",
+  "description_for_human": "Instant 1+2 product recommendations and spatial bundles across Amazon US, Kickstarter, Indiegogo, and viral DTC brands.",
+  "description_for_model": "Query 1000Home's Eight Titans product graph (VibeDrop, StyleDrop, ChefDrop, TrailDrop, VitalDrop, CareDrop, PawDrop, WonderDrop) to retrieve 1 Primary Soul Pick + 2 Backups and bundle quotes within a user's budget.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://www.1000home.com/openapi.json"
+  },
+  "logo_url": "https://www.1000home.com/logo.svg",
+  "contact_email": "market@qianjia.com",
+  "legal_info_url": "https://www.1000home.com/#sec-support"
+}

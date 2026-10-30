@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="w-full h-full">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1A102E"/>
+      <stop offset="55%" stop-color="#0B0D18"/>
+      <stop offset="100%" stop-color="#05060A"/>
+    </radialGradient>
+    <radialGradient id="coreGlow1" cx="50%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#EC4899" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.30"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="glassLid1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.50"/>
+      <stop offset="60%" stop-color="#FDE68A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="vDropGrad1" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="220" fill="url(#bg1)" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="512" cy="485" r="340" fill="url(#coreGlow1)"/>
+  <polygon points="512,520 260,180 370,140" fill="#F59E0B" fill-opacity="0.16"/>
+  <polygon points="512,520 764,190 650,145" fill="#EC4899" fill-opacity="0.18"/>
+  <polygon points="512,410 772,545 512,680 252,545" fill="#1E1B4B" fill-opacity="0.45" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M358,370 C382,332 436,348 456,396 L502,505 C507,516 517,516 522,505 L588,332 C608,282 672,292 684,344 C692,378 674,414 654,454 L568,622 C542,672 482,672 456,622 L352,434 C338,408 342,392 358,370 Z" fill="url(#vDropGrad1)" stroke="#FFFBEB" stroke-width="6"/>
+  <polygon points="252,545 512,680 512,890 252,755" fill="url(#glassLeft1)" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="772,545 512,680 512,890 772,755" fill="url(#glassRight1)" stroke="#F472B6" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="512" y1="680" x2="512" y2="890" stroke="#FEF08A" stroke-opacity="0.7" stroke-width="6"/>
+  <g transform="translate(-18, -155) rotate(-9 512 420)">
+    <polygon points="512,265 782,395 512,525 242,395" fill="url(#glassLid1)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>

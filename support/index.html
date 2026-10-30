@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1000Home (www.1000home.com) — AI-Native Home &amp; Lifestyle Mystery Shopping Matrix</title>
+  <meta name="description" content="1000Home is North America's next-generation AI lifestyle & residential product discovery ecosystem powered by VibeDrop and the Eight Titans App Matrix. Operated by Guangzhou Smarthome Technology Co.,ltd." />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", sans-serif;
+      background-color: #05070E;
+      color: #F3F4F6;
+      overflow-x: hidden;
+    }
+    .glass-panel {
+      background: rgba(15, 20, 35, 0.78);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+    }
+    .glass-pill {
+      background: rgba(30, 41, 59, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .hero-mesh {
+      background:
+        radial-gradient(circle at 18% 20%, rgba(236, 72, 153, 0.18), transparent 42%),
+        radial-gradient(circle at 82% 25%, rgba(245, 158, 11, 0.16), transparent 40%),
+        radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.12), transparent 48%);
+    }
+    .glow-magenta {
+      box-shadow: 0 0 36px -8px rgba(236, 72, 153, 0.45);
+    }
+    .glow-amber {
+      box-shadow: 0 0 30px -6px rgba(245, 158, 11, 0.35);
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #070A14; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col hero-mesh selection:bg-pink-500 selection:text-white">
+
+  <!-- ==================== STICKY HEADER & BILINGUAL BAR ==================== -->
+  <header class="sticky top-0 z-40 glass-panel border-b border-white/10 px-4 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <!-- Brand Identity -->
+      <a href="#top" onclick="navigateSection('portal')" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-2xl overflow-hidden shadow-lg shadow-pink-500/20 border border-white/15 shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="w-full h-full">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1A102E"/>
+      <stop offset="55%" stop-color="#0B0D18"/>
+      <stop offset="100%" stop-color="#05060A"/>
+    </radialGradient>
+    <radialGradient id="coreGlow1" cx="50%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#EC4899" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.30"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="glassLid1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.50"/>
+      <stop offset="60%" stop-color="#FDE68A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="vDropGrad1" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="220" fill="url(#bg1)" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="512" cy="485" r="340" fill="url(#coreGlow1)"/>
+  <polygon points="512,520 260,180 370,140" fill="#F59E0B" fill-opacity="0.16"/>
+  <polygon points="512,520 764,190 650,145" fill="#EC4899" fill-opacity="0.18"/>
+  <polygon points="512,410 772,545 512,680 252,545" fill="#1E1B4B" fill-opacity="0.45" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M358,370 C382,332 436,348 456,396 L502,505 C507,516 517,516 522,505 L588,332 C608,282 672,292 684,344 C692,378 674,414 654,454 L568,622 C542,672 482,672 456,622 L352,434 C338,408 342,392 358,370 Z" fill="url(#vDropGrad1)" stroke="#FFFBEB" stroke-width="6"/>
+  <polygon points="252,545 512,680 512,890 252,755" fill="url(#glassLeft1)" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="772,545 512,680 512,890 772,755" fill="url(#glassRight1)" stroke="#F472B6" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="512" y1="680" x2="512" y2="890" stroke="#FEF08A" stroke-opacity="0.7" stroke-width="6"/>
+  <g transform="translate(-18, -155) rotate(-9 512 420)">
+    <polygon points="512,265 782,395 512,525 242,395" fill="url(#glassLid1)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-black text-lg tracking-tight bg-gradient-to-r from-white via-amber-200 to-pink-400 bg-clip-text text-transparent">1000HOME</span>
+            <span class="text-[11px] font-mono px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/30">www.1000home.com</span>
+          </div>
+          <p id="headerTagline" class="text-[11px] text-gray-400">North America AI-Native Home &amp; Lifestyle Shopping Matrix</p>
+        </div>
+      </a>
+
+      <!-- Main Navigation -->
+      <nav class="flex items-center gap-1 bg-gray-900/90 p-1 rounded-xl border border-white/10 overflow-x-auto max-w-full">
+        <button id="navBtn-portal" onclick="navigateSection('portal')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-gradient-to-r from-pink-500 to-amber-500 text-black shadow">
+          <span data-i18n="nav_portal">🚀 8-App Matrix &amp; Web Portal</span>
+        </button>
+        <button id="navBtn-vibedrop" onclick="navigateSection('vibedrop')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-300 hover:text-white">
+          <span data-i18n="nav_vibedrop">✨ VibeDrop Flagship</span>
+        </button>
+        <button id="navBtn-agent" onclick="navigateSection('agent')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-300 hover:text-white">
+          <span data-i18n="nav_agent">🤖 AI Agent API</span>
+        </button>
+        <button id="navBtn-partners" onclick="navigateSection('partners')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-300 hover:text-white">
+          <span data-i18n="nav_partners">🤝 US Partner &amp; Media Kit</span>
+        </button>
+        <button id="navBtn-support" onclick="navigateSection('support')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-300 hover:text-white">
+          <span data-i18n="nav_support">🛡️ App Support &amp; Privacy</span>
+        </button>
+      </nav>
+
+      <!-- Language Toggle (Default: EN) -->
+      <div class="flex items-center gap-2">
+        <button
+          id="langToggleBtn"
+          onclick="toggleLanguage()"
+          class="px-3.5 py-1.5 rounded-xl bg-gray-900 hover:bg-gray-800 border border-amber-500/40 text-xs font-extrabold text-amber-300 flex items-center gap-1.5 transition-all"
+        >
+          <span>🌐</span>
+          <span id="langToggleLabel">EN / 中文</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT AREA ==================== -->
+  <main id="top" class="flex-1 max-w-7xl w-full mx-auto px-4 py-8 space-y-12">
+
+    <!-- ==================== SECTION 1: HERO & 8 TITANS APP PORTAL ==================== -->
+    <section id="sec-portal" class="space-y-10">
+      <!-- Hero Banner -->
+      <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-pink-500/30 glow-magenta relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1 rounded-full bg-pink-500/15 border border-pink-500/30 text-pink-300 text-xs font-bold">
+              <span data-i18n="hero_badge">⚡ THE ANTI-SEARCH SHOPPING REVOLUTION · 8 VERTICAL AI APPS + AGENT API</span>
+            </div>
+            <h1 id="heroTitle" class="text-3xl sm:text-5xl font-black tracking-tight text-white leading-[1.12]">
+              Stop Scrolling 10,000 Listings.<br/>
+              <span class="bg-gradient-to-r from-pink-400 via-amber-300 to-cyan-400 bg-clip-text text-transparent">Unbox Your Home’s Next Vibe in 2 Seconds.</span>
+            </h1>
+            <p id="heroSubtitle" class="text-sm sm:text-base text-gray-300 leading-relaxed max-w-2xl">
+              <strong>1000Home (www.1000home.com)</strong> is North America’s premier AI-native residential lifestyle &amp; impulse shopping guide platform. Powered by our proprietary <strong>4-Slot Reasoning Funnel</strong> and shared on-device LLM architecture (<code>group.com.robotzero.shared.ai</code>), our <strong>"Eight Titans" App Matrix</strong> collapses 142,800+ products across Amazon US, Kickstarter, Indiegogo, and viral DTC brands into <strong>1 Soul Pick + 2 Backups</strong> and turnkey spatial bundles.
+            </p>
+
+            <!-- Hero CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <button onclick="navigateSection('vibedrop')" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-pink-500 via-fuchsia-500 to-amber-500 text-black font-black text-sm shadow-lg hover:brightness-110 transition-all">
+                <span data-i18n="hero_cta_primary">✨ Explore #1 VibeDrop (Flagship App)</span>
+              </button>
+              <button onclick="navigateSection('agent')" class="px-5 py-3.5 rounded-2xl glass-pill text-white hover:border-cyan-400 font-bold text-sm transition-all">
+                <span data-i18n="hero_cta_agent">🤖 AI Agent Data Protocol (MCP/REST)</span>
+              </button>
+              <button onclick="navigateSection('partners')" class="px-5 py-3.5 rounded-2xl glass-pill text-amber-300 hover:border-amber-400 font-bold text-sm transition-all">
+                <span data-i18n="hero_cta_partner">📈 Brand &amp; Affiliate Partner Vetting</span>
+              </button>
+            </div>
+
+            <!-- Key Platform Metrics Bar -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-white/10">
+              <div>
+                <div class="text-xl sm:text-2xl font-black text-white">8 Apps</div>
+                <div data-i18n="stat_1" class="text-[11px] text-gray-400">Residential Family Life Matrix</div>
+              </div>
+              <div>
+                <div class="text-xl sm:text-2xl font-black text-amber-400">142,800+</div>
+                <div data-i18n="stat_2" class="text-[11px] text-gray-400">Curated US Home &amp; Tech SKUs</div>
+              </div>
+              <div>
+                <div class="text-xl sm:text-2xl font-black text-pink-400">&lt; 45ms</div>
+                <div data-i18n="stat_3" class="text-[11px] text-gray-400">On-Device AI Intent Reasoning</div>
+              </div>
+              <div>
+                <div class="text-xl sm:text-2xl font-black text-emerald-400">1 + 2</div>
+                <div data-i18n="stat_4" class="text-[11px] text-gray-400">Soul Pick + Backups &amp; Combos</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Flagship VibeDrop Live Card & QR Code Scanner -->
+          <div class="lg:col-span-5 glass-panel rounded-3xl p-6 border-2 border-pink-500/50 space-y-4 bg-gray-950/80">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-pink-500 text-black text-xs font-black" data-i18n="flagship_pill">
+                #1 FLAGSHIP APP · READY FOR LAUNCH
+              </span>
+              <span class="text-xs font-mono text-pink-400">#EC4899 · Magenta-Purple</span>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-20 h-20 rounded-2xl overflow-hidden border-2 border-pink-500/50 shrink-0 shadow-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="w-full h-full">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1A102E"/>
+      <stop offset="55%" stop-color="#0B0D18"/>
+      <stop offset="100%" stop-color="#05060A"/>
+    </radialGradient>
+    <radialGradient id="coreGlow1" cx="50%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#EC4899" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.30"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="glassLid1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.50"/>
+      <stop offset="60%" stop-color="#FDE68A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="vDropGrad1" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="220" fill="url(#bg1)" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="512" cy="485" r="340" fill="url(#coreGlow1)"/>
+  <polygon points="512,520 260,180 370,140" fill="#F59E0B" fill-opacity="0.16"/>
+  <polygon points="512,520 764,190 650,145" fill="#EC4899" fill-opacity="0.18"/>
+  <polygon points="512,410 772,545 512,680 252,545" fill="#1E1B4B" fill-opacity="0.45" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M358,370 C382,332 436,348 456,396 L502,505 C507,516 517,516 522,505 L588,332 C608,282 672,292 684,344 C692,378 674,414 654,454 L568,622 C542,672 482,672 456,622 L352,434 C338,408 342,392 358,370 Z" fill="url(#vDropGrad1)" stroke="#FFFBEB" stroke-width="6"/>
+  <polygon points="252,545 512,680 512,890 252,755" fill="url(#glassLeft1)" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="772,545 512,680 512,890 772,755" fill="url(#glassRight1)" stroke="#F472B6" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="512" y1="680" x2="512" y2="890" stroke="#FEF08A" stroke-opacity="0.7" stroke-width="6"/>
+  <g transform="translate(-18, -155) rotate(-9 512 420)">
+    <polygon points="512,265 782,395 512,525 242,395" fill="url(#glassLid1)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg>
+              </div>
+              <div>
+                <h2 class="text-2xl font-black text-white">VibeDrop <span class="text-xs font-semibold text-pink-300">by DearMuse</span></h2>
+                <p class="text-xs text-amber-300 font-semibold">"Instant AI Room &amp; Tech Mystery Picks"</p>
+                <p data-i18n="vibedrop_short_desc" class="text-xs text-gray-400 mt-1">
+                  Desk Setups · Villa Smart Lighting · Cozy Bedrooms · Smart Pet &amp; Backyard Gadgets
+                </p>
+              </div>
+            </div>
+
+            <!-- QR Code & Download Matrix (iOS Reserved, Android Pending, Agent API Live) -->
+            <div class="p-4 rounded-2xl bg-gray-900/95 border border-white/10 grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+              <!-- Stylized SVG QR Code Placeholder -->
+              <div class="sm:col-span-4 flex flex-col items-center justify-center p-2.5 bg-white rounded-xl text-black">
+                <svg viewBox="0 0 100 100" class="w-24 h-24">
+                  <rect width="100" height="100" fill="#FFFFFF"/>
+                  <rect x="8" y="8" width="26" height="26" fill="none" stroke="#05070E" stroke-width="5"/>
+                  <rect x="15" y="15" width="12" height="12" fill="#EC4899"/>
+                  <rect x="66" y="8" width="26" height="26" fill="none" stroke="#05070E" stroke-width="5"/>
+                  <rect x="73" y="15" width="12" height="12" fill="#05070E"/>
+                  <rect x="8" y="66" width="26" height="26" fill="none" stroke="#05070E" stroke-width="5"/>
+                  <rect x="15" y="73" width="12" height="12" fill="#05070E"/>
+                  <rect x="42" y="12" width="6" height="6" fill="#05070E"/>
+                  <rect x="42" y="24" width="6" height="12" fill="#05070E"/>
+                  <rect x="52" y="18" width="6" height="6" fill="#05070E"/>
+                  <rect x="12" y="44" width="12" height="6" fill="#05070E"/>
+                  <rect x="36" y="42" width="28" height="20" rx="4" fill="#05070E"/>
+                  <text x="50" y="55" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="bold" font-family="sans-serif">Vibe</text>
+                  <rect x="70" y="44" width="8" height="14" fill="#05070E"/>
+                  <rect x="82" y="50" width="10" height="6" fill="#05070E"/>
+                  <rect x="42" y="70" width="10" height="10" fill="#05070E"/>
+                  <rect x="58" y="66" width="8" height="18" fill="#05070E"/>
+                  <rect x="72" y="72" width="18" height="8" fill="#EC4899"/>
+                  <rect x="72" y="84" width="10" height="8" fill="#05070E"/>
+                </svg>
+                <span class="text-[10px] font-bold text-gray-800 mt-1" data-i18n="qr_caption">iOS Scan Slot (Reserved)</span>
+              </div>
+
+              <div class="sm:col-span-8 space-y-2">
+                <!-- iOS Download Button (Reserved Link as requested) -->
+                <button
+                  onclick="showPendingDownloadToast('VibeDrop iOS App Store')"
+                  class="w-full py-2.5 px-3.5 rounded-xl bg-white text-black font-extrabold text-xs flex items-center justify-between hover:bg-gray-200 transition-all"
+                >
+                  <span class="flex items-center gap-2">
+                    <span></span>
+                    <span data-i18n="btn_ios_reserved">App Store (iOS Link Reserved · Pending Live)</span>
+                  </span>
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-pink-500/20 text-pink-700 font-mono">v1.0 RC</span>
+                </button>
+
+                <!-- Android Button (Coming Soon) -->
+                <button
+                  onclick="showPendingDownloadToast('VibeDrop Android APK / Google Play')"
+                  class="w-full py-2 px-3.5 rounded-xl bg-gray-800/90 text-gray-300 font-semibold text-xs flex items-center justify-between border border-white/10 hover:border-white/30 transition-all"
+                >
+                  <span class="flex items-center gap-2">
+                    <span>🤖</span>
+                    <span data-i18n="btn_android_soon">Android Edition (Planned Next Phase)</span>
+                  </span>
+                  <span class="text-[10px] text-gray-400 font-mono">Coming Soon</span>
+                </button>
+
+                <!-- AI Agent Endpoint Button -->
+                <button
+                  onclick="navigateSection('agent')"
+                  class="w-full py-2 px-3.5 rounded-xl bg-cyan-500/15 text-cyan-300 font-bold text-xs flex items-center justify-between border border-cyan-500/30 hover:bg-cyan-500/25 transition-all"
+                >
+                  <span class="flex items-center gap-2">
+                    <span>⚡</span>
+                    <span data-i18n="btn_agent_interface">AI Agent Data Interface (MCP / REST)</span>
+                  </span>
+                  <span class="text-[10px] font-mono text-emerald-300">● ACTIVE</span>
+                </button>
+              </div>
+            </div>
+
+            <div id="downloadNoticeBanner" class="hidden p-3 rounded-xl bg-amber-500/20 border border-amber-500/40 text-xs text-amber-200 font-medium"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== THE EIGHT TITANS APP MATRIX GRID ==================== -->
+      <div class="space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-amber-400" data-i18n="matrix_eyebrow">
+              THE EIGHT TITANS RESIDENTIAL SHOPPING MATRIX · 八大金刚海外电商导购矩阵
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-white mt-1" data-i18n="matrix_heading">
+              1 Shared On-Device AI Engine. 8 Residential Lifestyle Apps.
+            </h2>
+          </div>
+          <p class="text-xs text-gray-400 max-w-md" data-i18n="matrix_note">
+            #1 VibeDrop is fully built (App Store link reserved for release). Apps #2–#8 display official names, color identities &amp; target categories; download links &amp; details are reserved for upcoming releases.
+          </p>
+        </div>
+
+        <div id="eightTitansGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <!-- Populated dynamically by renderEightTitansGrid() in JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: VIBEDROP WEB EDITION INTERACTIVE DEMO ==================== -->
+    <section id="sec-vibedrop" class="space-y-6 pt-4 border-t border-white/10">
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-pink-500/40 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <span class="text-xs px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/40 font-extrabold" data-i18n="webdemo_badge">
+              ✨ #1 VIBEDROP WEB EDITION · LIVE 4-SLOT REASONING FUNNEL DEMO
+            </span>
+            <h2 class="text-2xl font-black text-white mt-2" data-i18n="webdemo_title">
+              Try VibeDrop’s 3-Tap Reasoning Funnel &amp; 1+2 Instant Mystery Box
+            </h2>
+            <p class="text-xs sm:text-sm text-gray-300 mt-1" data-i18n="webdemo_desc">
+              Experience how VibeDrop narrows 142,800+ items across Amazon US, Kickstarter/Indiegogo, and viral DTC stores down to 1 Primary Soul Pick + 2 Backups under your budget cap.
+            </p>
+          </div>
+          <div class="p-3 rounded-2xl bg-gray-950 border border-white/10 text-right">
+            <div class="text-[11px] text-gray-400" data-i18n="funnel_label">Live Funnel Collapse</div>
+            <div id="webFunnelCounter" class="text-sm font-mono font-bold text-amber-300">
+              142,800 → 4,560 → 68 → <span class="text-emerald-400 underline">3 LOCKED (99.2%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4-Slot Interactive Selector -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="p-3.5 rounded-2xl bg-gray-900/90 border border-pink-500/40 space-y-2">
+            <div class="text-xs font-bold text-pink-400" data-i18n="slot1_title">📍 1. Target Space</div>
+            <div class="flex flex-wrap gap-1.5">
+              <button onclick="selectWebDemoScene('desk')" id="demoSceneBtn-desk" class="px-2.5 py-1.5 rounded-lg text-xs font-bold bg-pink-500 text-black">🖥️ Desk Setup</button>
+              <button onclick="selectWebDemoScene('villa')" id="demoSceneBtn-villa" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold glass-pill text-gray-300">🏡 Villa Lighting</button>
+              <button onclick="selectWebDemoScene('pet')" id="demoSceneBtn-pet" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold glass-pill text-gray-300">🐾 Smart Pet</button>
+              <button onclick="selectWebDemoScene('yard')" id="demoSceneBtn-yard" class="px-2.5 py-1.5 rounded-lg text-xs font-semibold glass-pill text-gray-300">🚜 Dad's Yard</button>
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-gray-900/90 border border-amber-500/40 space-y-2">
+            <div class="text-xs font-bold text-amber-400" data-i18n="slot2_title">✨ 2. Vibe &amp; Dopamine Goal</div>
+            <div id="demoVibeTag" class="text-xs text-white font-semibold bg-gray-950 px-3 py-2 rounded-xl border border-white/10">
+              Retro Pixel Art + Transparent Cyber Fast-Charge
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-gray-900/90 border border-cyan-500/40 space-y-2">
+            <div class="text-xs font-bold text-cyan-300" data-i18n="slot3_title">🛡️ 3. AI Anti-Regret Guardrail</div>
+            <div id="demoGuardTag" class="text-xs text-white font-semibold bg-gray-950 px-3 py-2 rounded-xl border border-white/10">
+              Apple Mac / Matter Native + Single USB-C Clean Routing
+            </div>
+          </div>
+
+          <div class="p-3.5 rounded-2xl bg-gray-900/90 border border-emerald-500/40 space-y-2">
+            <div class="flex justify-between text-xs font-bold text-emerald-400">
+              <span data-i18n="slot4_title">💵 4. Impulse Budget Cap</span>
+              <span id="demoBudgetLabel" class="text-amber-300">$200 USD</span>
+            </div>
+            <input id="demoBudgetSlider" type="range" min="80" max="500" step="10" value="200" oninput="updateWebDemoBudget(this.value)" class="w-full accent-pink-500 cursor-pointer" />
+          </div>
+        </div>
+
+        <!-- 1+2 Instant Results Grid -->
+        <div id="webDemoCardsGrid" class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: AI AGENT DATA INTERFACE (MCP & OPENAPI) ==================== -->
+    <section id="sec-agent" class="space-y-6 pt-4 border-t border-white/10">
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-cyan-500/40 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <span class="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-extrabold">
+              🤖 1000HOME AGENTIC COMMERCE PROTOCOL (ACP v1.0 · MCP &amp; REST API)
+            </span>
+            <h2 class="text-2xl font-black text-white mt-2" data-i18n="agent_heading">
+              Dedicated Data Interface for External AI Agents &amp; Personal Assistants
+            </h2>
+            <p class="text-xs sm:text-sm text-gray-300 mt-1 max-w-3xl" data-i18n="agent_sub">
+              In addition to our iOS &amp; Android apps, <strong>www.1000home.com</strong> exposes a structured, low-latency <strong>AI Agent Data Interface</strong>. External AI Agents (OpenAI Actions, Claude MCP, Muse, OpenClaw, S2-Habitat Agents) can query our 8-Titan Product &amp; Spatial Bundle Graph and receive attributed direct-checkout links in one JSON call.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="copyAgentCurl()" class="px-4 py-2.5 rounded-xl bg-cyan-400 text-black font-extrabold text-xs shadow hover:brightness-110 transition-all">
+              📋 Copy Agent cURL / JSON Schema
+            </button>
+          </div>
+        </div>
+
+        <div id="agentCopyNotice" class="hidden p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-xs text-emerald-300 font-bold">
+          ✓ Agent API cURL &amp; MCP Schema copied to clipboard!
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Left: Request & Discovery Endpoints -->
+          <div class="lg:col-span-6 space-y-3">
+            <div class="text-xs font-bold text-cyan-300 uppercase tracking-wider">1. Agent Discovery &amp; Query Endpoint</div>
+            <div class="p-4 rounded-2xl bg-gray-950 border border-white/10 font-mono text-xs text-gray-300 space-y-2 overflow-x-auto">
+              <div class="text-emerald-400 font-bold"># MCP &amp; OpenAPI Discovery Manifests</div>
+              <div>GET https://www.1000home.com/.well-known/ai-plugin.json</div>
+              <div>GET https://www.1000home.com/llms.txt</div>
+              <div class="text-amber-400 font-bold pt-2"># Query 1+2 Instant Picks &amp; Spatial Bundle</div>
+              <pre id="agentCurlBlock" class="text-[11px] text-cyan-200 leading-relaxed">curl -X POST https://www.1000home.com/api/v1/agent/recommend \
+  -H "Content-Type: application/json" \
+  -H "X-1000Home-Agent-ID: agent_muse_us" \
+  -d '{
+    "titan_app": "vibedrop",
+    "space": "DESK_SETUP",
+    "vibe_intent": "retro pixel art display and transparent fast charger",
+    "guardrails": ["MAC_NATIVE", "SINGLE_USBC"],
+    "budget_usd": 200,
+    "include_bundle_manifest": true
+  }'</pre>
+            </div>
+          </div>
+
+          <!-- Right: Live Structured JSON Response -->
+          <div class="lg:col-span-6 space-y-3">
+            <div class="text-xs font-bold text-amber-300 uppercase tracking-wider">2. Structured 1+2 + Direct Checkout JSON Payload</div>
+            <div class="p-4 rounded-2xl bg-gray-950 border border-white/10 font-mono text-[11px] text-emerald-300 overflow-x-auto">
+<pre>{
+  "status": "LOCKED_1_PLUS_2",
+  "engine": "1000Home-HomeEasy-v2.0",
+  "shared_llm_group": "group.com.robotzero.shared.ai",
+  "funnel_trace": { "scanned": 142800, "spatial_filtered": 4560, "final_locked": 3, "confidence": 0.992 },
+  "primary_soul_pick": {
+    "title": "Divoom Pixoo-64 II WiFi 64x64 Pixel Art Display",
+    "price_usd": 109.99,
+    "match_score": 0.98,
+    "source_channel": "CN_DTC_INDEPENDENT",
+    "direct_checkout_url": "https://divoom.com/products/pixoo-64?utm_source=1000home_agent&subid=vd_ag01"
+  },
+  "backup_picks": [
+    { "role": "CROWDFUND_GEEK", "title": "SHARGE ICEMAG 2 Qi2 Active-Cooling Power Bank", "price_usd": 79.90, "url": "https://sharge.com/products/icemag-2?utm_source=1000home_agent" },
+    { "role": "VALUE_STEAL", "title": "Govee RGBIC LED Strip Lights (Matter)", "price_usd": 39.99, "url": "https://us.govee.com/collections/strip-lights?utm_source=1000home_agent" }
+  ],
+  "postback_webhook": "https://www.1000home.com/api/v1/webhooks/order-callback"
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: US RESIDENTIAL PROMOTION POWER & PARTNER QUALIFICATION ==================== -->
+    <section id="sec-partners" class="space-y-6 pt-4 border-t border-white/10">
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-amber-500/40 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <span class="text-xs px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 font-extrabold">
+              🤝 OVERSEAS E-COMMERCE PARTNER QUALIFICATION &amp; US PROMOTION CAPABILITY PROOF
+            </span>
+            <h2 class="text-2xl font-black text-white mt-2" data-i18n="partner_heading">
+              Why Top Global DTC Brands &amp; Affiliate Networks Partner with 1000Home
+            </h2>
+            <p class="text-xs sm:text-sm text-gray-300 mt-1 max-w-3xl" data-i18n="partner_sub">
+              Operated by <strong>Guangzhou Smarthome Technology Co., Ltd. (广州智家科技有限公司)</strong>, <strong>www.1000home.com</strong> combines 20+ years of smart home industry expertise with an AI-native 8-App discovery matrix engineered for high-intent North American residential consumers.
+            </p>
+          </div>
+          <a href="mailto:market@qianjia.com?subject=1000Home%20Brand%20%26%20Affiliate%20Partnership" class="px-5 py-3 rounded-2xl bg-amber-500 text-black font-black text-xs sm:text-sm shadow hover:brightness-110 transition-all">
+            ✉️ Partner Contact: market@qianjia.com
+          </a>
+        </div>
+
+        <!-- 4 Pillars of Promotional Power in the US Market -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-5 rounded-2xl bg-gray-900/90 border border-white/10 space-y-2">
+            <div class="text-xs font-bold text-pink-400">01 · PRECISION DECISION FUNNEL</div>
+            <div class="text-xl font-black text-white">6.5%+ Checkout CVR</div>
+            <p class="text-xs text-gray-300 leading-relaxed" data-i18n="proof_card_1">
+              Unlike coupon spam sites or generic blogs, our 4-Slot Reasoning Dialog eliminates decision fatigue by presenting only <strong>1 Primary Pick + 2 Backups</strong> matched to the user's exact room, guardrail, and budget.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-gray-900/90 border border-white/10 space-y-2">
+            <div class="text-xs font-bold text-amber-400">02 · WHOLE-HOME BUNDLE ENGINE</div>
+            <div class="text-xl font-black text-white">$135 – $499+ AOV</div>
+            <p class="text-xs text-gray-300 leading-relaxed" data-i18n="proof_card_2">
+              Powered by our distilled <strong>AHomeEasy / KHomeEasy / XHomeEasy</strong> relational quote engine and the 50-Item SSSU Smart Home Standard, we group single gadgets into complete room &amp; villa packages.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-gray-900/90 border border-white/10 space-y-2">
+            <div class="text-xs font-bold text-cyan-400">03 · X.COM &amp; TIKTOK RAG PROOF</div>
+            <div class="text-xl font-black text-white">24/7 Social Velocity</div>
+            <p class="text-xs text-gray-300 leading-relaxed" data-i18n="proof_card_3">
+              We continuously index real setup reviews from X.com (<code>#desksetup</code>, <code>#smarthome</code>, <code>#backyard</code>) and deploy native 9:16 vertical short-form video campaigns targeting US homeowners and Gen-Z tech buyers.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-gray-900/90 border border-white/10 space-y-2">
+            <div class="text-xs font-bold text-emerald-400">04 · FULL NETWORK COMPLIANCE</div>
+            <div class="text-xl font-black text-white">S2S SubID Attribution</div>
+            <p class="text-xs text-gray-300 leading-relaxed" data-i18n="proof_card_4">
+              100% compliant with FTC Affiliate Guidelines, Apple Universal Links, and S2S postback tracking across <strong>Impact.com, Awin/ShareASale, Shopify Collabs, Kickbooster, and Amazon Associates</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Curated Brand Ecosystem Showcase Table (Proof for Affiliate Managers) -->
+        <div class="p-5 rounded-2xl bg-gray-950/90 border border-white/10 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-sm font-extrabold text-white" data-i18n="seed_table_title">
+              🏡 Featured North American Residential Verticals &amp; Curated Brand Ecosystem
+            </h3>
+            <span class="text-xs text-emerald-400 font-mono">Verified Direct-to-Consumer &amp; Crowdfunding Channels</span>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="border-b border-white/10 text-gray-400">
+                  <th class="py-2.5 pr-4">Residential Vertical</th>
+                  <th class="py-2.5 pr-4">Target US Consumer Segment</th>
+                  <th class="py-2.5 pr-4">Featured Ecosystem Brands &amp; Official Stores</th>
+                  <th class="py-2.5">Primary App Portal</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-white/5 text-gray-200">
+                <tr>
+                  <td class="py-2.5 pr-4 font-bold text-amber-300">Villa Smart &amp; Eaves Lighting</td>
+                  <td class="py-2.5 pr-4">US Single-Family Homeowners (Curb Appeal &amp; Holiday Sync)</td>
+                  <td class="py-2.5 pr-4">
+                    <a href="https://www.eufy.com/collections/smart-led-lights" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">eufy Lighting</a> ·
+                    <a href="https://us.govee.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Govee US</a> ·
+                    <a href="https://www.lumarysmart.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Lumary Smart</a> ·
+                    <a href="https://store-support.aqara.com/products/aqara-presence-sensor-fp2" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Aqara US</a>
+                  </td>
+                  <td class="py-2.5 font-mono text-pink-400">VibeDrop (#1)</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-4 font-bold text-pink-300">Gen-Z Desk Toys &amp; Cyber Gear</td>
+                  <td class="py-2.5 pr-4">Gamers, Developers, WFH Creators (#desksetup)</td>
+                  <td class="py-2.5 pr-4">
+                    <a href="https://www.gravastar.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">GravaStar</a> ·
+                    <a href="https://divoom.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Divoom</a> ·
+                    <a href="https://sharge.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">SHARGE</a> ·
+                    <a href="https://nuphy.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">NuPhy</a> ·
+                    <a href="https://www.lofree.co/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Lofree</a>
+                  </td>
+                  <td class="py-2.5 font-mono text-pink-400">VibeDrop (#1)</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-4 font-bold text-orange-300">Smart Pet Care &amp; Companions</td>
+                  <td class="py-2.5 pr-4">US Pet Parents (66% of US Households)</td>
+                  <td class="py-2.5 pr-4">
+                    <a href="https://store.enabot.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Enabot EBO</a> ·
+                    <a href="https://petlibro.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Petlibro</a> ·
+                    <a href="https://www.petkit.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">PETKIT US</a>
+                  </td>
+                  <td class="py-2.5 font-mono text-orange-300">PawDrop (#7) &amp; VibeDrop</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 pr-4 font-bold text-yellow-300">Backyard, Lawn, Pool &amp; Garage</td>
+                  <td class="py-2.5 pr-4">Suburban Dads, DIYers, Overlanders</td>
+                  <td class="py-2.5 pr-4">
+                    <a href="https://us.mammotion.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Mammotion LUBA</a> ·
+                    <a href="https://beatbot.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Beatbot</a> ·
+                    <a href="https://fanttik.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">Fanttik</a> ·
+                    <a href="https://us.ecoflow.com/" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">EcoFlow US</a>
+                  </td>
+                  <td class="py-2.5 font-mono text-yellow-300">TrailDrop (#4) &amp; VibeDrop</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: APPLE APP STORE SUPPORT, PRIVACY & COMPLIANCE ==================== -->
+    <section id="sec-support" class="space-y-6 pt-4 border-t border-white/10">
+      <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-emerald-500/30 space-y-6">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <span class="text-xs px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-extrabold">
+              🛡️ APPLE APP STORE SUPPORT CENTER, PRIVACY POLICY &amp; LEGAL DISCLOSURE
+            </span>
+            <h2 class="text-2xl font-black text-white mt-2" data-i18n="support_heading">
+              Official App Support &amp; Compliance Documentation
+            </h2>
+            <p class="text-xs text-gray-400 mt-1" data-i18n="support_sub">
+              This section provides the mandatory Support URL, Privacy Policy URL, and Corporate Contact Verification for Apple App Store Connect review and global e-commerce affiliate networks.
+            </p>
+          </div>
+          <!-- Sub-tabs for Support / Privacy / Terms -->
+          <div class="flex items-center gap-2 bg-gray-900 p-1 rounded-xl border border-white/10">
+            <button onclick="switchLegalTab('support')" id="legalBtn-support" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-black">App Support &amp; FAQ</button>
+            <button onclick="switchLegalTab('privacy')" id="legalBtn-privacy" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-300 hover:text-white">Privacy Policy</button>
+            <button onclick="switchLegalTab('terms')" id="legalBtn-terms" class="px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-300 hover:text-white">Terms &amp; FTC Disclosure</button>
+          </div>
+        </div>
+
+        <!-- Legal Sub-View 1: App Support & Contact -->
+        <div id="legalView-support" class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-7 space-y-4">
+            <h3 class="text-base font-bold text-white" data-i18n="faq_title">Frequently Asked Questions (VibeDrop &amp; 1000Home Apps)</h3>
+            <div class="space-y-3 text-xs">
+              <div class="p-4 rounded-2xl bg-gray-900/90 border border-white/10 space-y-1">
+                <div class="font-bold text-amber-300">Q1: How does VibeDrop generate 1+2 product recommendations?</div>
+                <p class="text-gray-300 leading-relaxed">
+                  VibeDrop uses our on-device Qwen AI intent engine (shared across our ecosystem via <code>group.com.robotzero.shared.ai</code>) combined with our cloud HomeEasy 2.0 spatial bundle solver to match your space, mood, and budget with 1 Primary Soul Pick and 2 Backups from Amazon, Kickstarter/Indiegogo, and verified DTC brand stores.
+                </p>
+              </div>
+              <div class="p-4 rounded-2xl bg-gray-900/90 border border-white/10 space-y-1">
+                <div class="font-bold text-amber-300">Q2: Where do I complete my purchase and how are returns handled?</div>
+                <p class="text-gray-300 leading-relaxed">
+                  Clicking any recommended item takes you directly to the official merchant website (e.g., Amazon.com, Kickstarter, or the brand's official US Shopify store) via Apple Universal Links or in-app Safari. If you complete a purchase, an order summary card is synced back to your chat; if you close the page without buying, no action is taken. All shipping, warranties, and 30-day returns are fulfilled directly by the official merchant.
+                </p>
+              </div>
+              <div class="p-4 rounded-2xl bg-gray-900/90 border border-white/10 space-y-1">
+                <div class="font-bold text-amber-300">Q3: How do I request technical support or account deletion?</div>
+                <p class="text-gray-300 leading-relaxed">
+                  You can clear all local conversation history and cached model weights directly inside the App Settings with one tap, or contact our support engineering team at <a href="mailto:market@qianjia.com" class="text-cyan-400 underline">market@qianjia.com</a>. We respond to all inquiries within 24 business hours.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Official Corporate Entity Card -->
+          <div class="lg:col-span-5 p-6 rounded-3xl bg-gray-950 border border-emerald-500/40 space-y-4">
+            <div class="text-xs font-extrabold text-emerald-400 uppercase tracking-wider" data-i18n="corp_card_badge">
+              OFFICIAL OPERATOR &amp; DEVELOPER SUPPORT CONTACT
+            </div>
+            <div class="space-y-3 text-xs">
+              <div>
+                <div class="text-gray-400">Operating Company (EN):</div>
+                <div class="text-sm font-bold text-white">Guangzhou Smarthome Technology Co., Ltd.</div>
+                <div class="text-[11px] text-gray-400 font-mono">(Guangzhou Smarthome Technology Co.,ltd)</div>
+              </div>
+              <div>
+                <div class="text-gray-400">运营主体 (中文):</div>
+                <div class="text-sm font-bold text-white">广州智家科技有限公司</div>
+              </div>
+              <div>
+                <div class="text-gray-400">Registered Office Address (EN):</div>
+                <div class="text-gray-200 leading-relaxed font-medium">
+                  Room 311, Building 2, No. 5 Dagang Road, Chebei, Tianhe District, Guangzhou
+                </div>
+              </div>
+              <div>
+                <div class="text-gray-400">办公地址 (中文):</div>
+                <div class="text-gray-200 leading-relaxed font-medium">
+                  广州市天河区车陂大岗路 5 号 2 栋 311 室
+                </div>
+              </div>
+              <div class="pt-2 border-t border-white/10 flex items-center justify-between">
+                <span class="text-gray-400">Support &amp; Business Email:</span>
+                <a href="mailto:market@qianjia.com" class="text-sm font-extrabold text-amber-400 hover:underline">market@qianjia.com</a>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-gray-400">Official Portal Domain:</span>
+                <span class="font-mono text-cyan-300">https://www.1000home.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Sub-View 2: Privacy Policy -->
+        <div id="legalView-privacy" class="hidden p-5 rounded-2xl bg-gray-950 border border-white/10 space-y-3 text-xs text-gray-300 leading-relaxed">
+          <h3 class="text-base font-bold text-white">Privacy Policy — 1000Home &amp; VibeDrop iOS Application</h3>
+          <p><strong>Effective Date:</strong> October 30, 2026 · <strong>Operator:</strong> Guangzhou Smarthome Technology Co., Ltd. (广州智家科技有限公司)</p>
+          <p><strong>1. On-Device AI Processing &amp; Zero-PII Inference:</strong> VibeDrop and the 1000Home Eight Titans App Matrix prioritize local on-device natural language processing via Apple's secure App Group container (<code>group.com.robotzero.shared.ai</code>). Your room descriptions, spatial preferences, and budget constraints are processed locally to extract anonymized intent vectors before querying product catalogs.</p>
+          <p><strong>2. External Checkout &amp; Attribution Cookies:</strong> When you tap a "Direct Buy" link, you are directed to third-party merchants (such as Amazon.com, Kickstarter, Indiegogo, or independent Shopify brand stores). We append an anonymized session identifier (<code>subid</code>) solely to attribute order completion and credit your Vibe Cashback summary card. If no purchase is made, no checkout data is stored.</p>
+          <p><strong>3. User Rights (CCPA / GDPR / Apple Privacy Guidelines):</strong> We never sell your personal data to third-party data brokers. You may delete your account and all conversation records at any time inside the app or by emailing <a href="mailto:market@qianjia.com" class="text-cyan-400 underline">market@qianjia.com</a>.</p>
+        </div>
+
+        <!-- Legal Sub-View 3: Terms & FTC Affiliate Disclosure -->
+        <div id="legalView-terms" class="hidden p-5 rounded-2xl bg-gray-950 border border-white/10 space-y-3 text-xs text-gray-300 leading-relaxed">
+          <h3 class="text-base font-bold text-white">Terms of Service &amp; FTC Affiliate Disclosure</h3>
+          <p><strong>FTC Affiliate &amp; Amazon Associates Disclosure:</strong> 1000Home (<code>www.1000home.com</code>) and our mobile applications (including VibeDrop, StyleDrop, ChefDrop, TrailDrop, VitalDrop, CareDrop, PawDrop, and WonderDrop) participate in affiliate marketing programs including the Amazon Services LLC Associates Program, Impact.com, Awin/ShareASale, Shopify Collabs, and Kickbooster. As an Amazon Associate and affiliate partner, we earn commissions from qualifying purchases made through links in our apps and website at zero extra cost to the consumer.</p>
+          <p><strong>Crowdfunding Disclaimer:</strong> Products recommended from Kickstarter or Indiegogo are crowdfunding campaigns managed by independent creators. Users should review creator delivery timelines on the respective crowdfunding platform prior to pledging.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="glass-panel border-t border-white/10 mt-12 px-4 py-8 text-xs text-gray-400">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+      <div class="md:col-span-5 space-y-2">
+        <div class="flex items-center gap-2.5">
+          <div class="w-7 h-7 rounded-lg overflow-hidden border border-white/20"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="w-full h-full">
+  <defs>
+    <radialGradient id="bg1" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#1A102E"/>
+      <stop offset="55%" stop-color="#0B0D18"/>
+      <stop offset="100%" stop-color="#05060A"/>
+    </radialGradient>
+    <radialGradient id="coreGlow1" cx="50%" cy="46%" r="36%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#EC4899" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glassLeft1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.32"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#1E1B4B" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassRight1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" stop-opacity="0.30"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="glassLid1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.50"/>
+      <stop offset="60%" stop-color="#FDE68A" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="vDropGrad1" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="24" width="976" height="976" rx="220" fill="url(#bg1)" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="8"/>
+  <circle cx="512" cy="485" r="340" fill="url(#coreGlow1)"/>
+  <polygon points="512,520 260,180 370,140" fill="#F59E0B" fill-opacity="0.16"/>
+  <polygon points="512,520 764,190 650,145" fill="#EC4899" fill-opacity="0.18"/>
+  <polygon points="512,410 772,545 512,680 252,545" fill="#1E1B4B" fill-opacity="0.45" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="4"/>
+  <path d="M358,370 C382,332 436,348 456,396 L502,505 C507,516 517,516 522,505 L588,332 C608,282 672,292 684,344 C692,378 674,414 654,454 L568,622 C542,672 482,672 456,622 L352,434 C338,408 342,392 358,370 Z" fill="url(#vDropGrad1)" stroke="#FFFBEB" stroke-width="6"/>
+  <polygon points="252,545 512,680 512,890 252,755" fill="url(#glassLeft1)" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="772,545 512,680 512,890 772,755" fill="url(#glassRight1)" stroke="#F472B6" stroke-opacity="0.55" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="512" y1="680" x2="512" y2="890" stroke="#FEF08A" stroke-opacity="0.7" stroke-width="6"/>
+  <g transform="translate(-18, -155) rotate(-9 512 420)">
+    <polygon points="512,265 782,395 512,525 242,395" fill="url(#glassLid1)" stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+</svg></div>
+          <span class="font-black text-base text-white">1000HOME · www.1000home.com</span>
+        </div>
+        <p data-i18n="footer_desc" class="text-gray-400 leading-relaxed">
+          AI-Native Lifestyle Advocacy &amp; Residential Shopping Guide Platform for North America. Powered by the Eight Titans App Matrix.
+        </p>
+        <p class="text-[11px] text-gray-500">
+          © 2026 Guangzhou Smarthome Technology Co., Ltd. (广州智家科技有限公司). All rights reserved.
+        </p>
+      </div>
+
+      <div class="md:col-span-4 space-y-1.5">
+        <div class="font-bold text-gray-200" data-i18n="footer_addr_title">Corporate Headquarters &amp; Address</div>
+        <div><strong>EN:</strong> Room 311, Building 2, No. 5 Dagang Road, Chebei, Tianhe District, Guangzhou</div>
+        <div><strong>中文:</strong> 广州市天河区车陂大岗路 5 号 2 栋 311 室</div>
+      </div>
+
+      <div class="md:col-span-3 space-y-1.5 md:text-right">
+        <div class="font-bold text-gray-200" data-i18n="footer_contact_title">Partner &amp; App Support</div>
+        <div>Email: <a href="mailto:market@qianjia.com" class="text-amber-400 font-bold hover:underline">market@qianjia.com</a></div>
+        <div>GitHub: <a href="https://github.com/SpaceSQ/1000home" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">github.com/SpaceSQ/1000home</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ENGINE ==================== -->
+  <script>
+    // Default language is strictly English ('en') as requested
+    let currentLang = 'en';
+    let currentDemoScene = 'desk';
+    let currentDemoBudget = 200;
+
+    const I18N = {
+      en: {
+        nav_portal: '🚀 8-App Matrix & Web Portal',
+        nav_vibedrop: '✨ VibeDrop Flagship',
+        nav_agent: '🤖 AI Agent API',
+        nav_partners: '🤝 US Partner & Media Kit',
+        nav_support: '🛡️ App Support & Privacy',
+        hero_badge: '⚡ THE ANTI-SEARCH SHOPPING REVOLUTION · 8 VERTICAL AI APPS + AGENT API',
+        hero_cta_primary: '✨ Explore #1 VibeDrop (Flagship App)',
+        hero_cta_agent: '🤖 AI Agent Data Protocol (MCP/REST)',
+        hero_cta_partner: '📈 Brand & Affiliate Partner Vetting',
+        stat_1: 'Residential Family Life Matrix',
+        stat_2: 'Curated US Home & Tech SKUs',
+        stat_3: 'On-Device AI Intent Reasoning',
+        stat_4: 'Soul Pick + Backups & Combos',
+        flagship_pill: '#1 FLAGSHIP APP · READY FOR LAUNCH',
+        vibedrop_short_desc: 'Desk Setups · Villa Smart Lighting · Cozy Bedrooms · Smart Pet & Backyard Gadgets',
+        qr_caption: 'iOS Scan Slot (Reserved)',
+        btn_ios_reserved: 'App Store (iOS Link Reserved · Pending Live)',
+        btn_android_soon: 'Android Edition (Planned Next Phase)',
+        btn_agent_interface: 'AI Agent Data Interface (MCP / REST)',
+        matrix_eyebrow: 'THE EIGHT TITANS RESIDENTIAL SHOPPING MATRIX · 八大金刚海外电商导购矩阵',
+        matrix_heading: '1 Shared On-Device AI Engine. 8 Residential Lifestyle Apps.',
+        matrix_note: '#1 VibeDrop is fully built (App Store link reserved for release). Apps #2–#8 display official names, color identities & target categories; download links & details are reserved for upcoming releases.',
+        webdemo_badge: '✨ #1 VIBEDROP WEB EDITION · LIVE 4-SLOT REASONING FUNNEL DEMO',
+        webdemo_title: 'Try VibeDrop’s 3-Tap Reasoning Funnel & 1+2 Instant Mystery Box',
+        webdemo_desc: 'Experience how VibeDrop narrows 142,800+ items across Amazon US, Kickstarter/Indiegogo, and viral DTC stores down to 1 Primary Soul Pick + 2 Backups under your budget cap.',
+        funnel_label: 'Live Funnel Collapse',
+        slot1_title: '📍 1. Target Space',
+        slot2_title: '✨ 2. Vibe & Dopamine Goal',
+        slot3_title: '🛡️ 3. AI Anti-Regret Guardrail',
+        slot4_title: '💵 4. Impulse Budget Cap',
+        agent_heading: 'Dedicated Data Interface for External AI Agents & Personal Assistants',
+        agent_sub: 'In addition to our iOS & Android apps, www.1000home.com exposes a structured, low-latency AI Agent Data Interface. External AI Agents can query our 8-Titan Product & Spatial Bundle Graph and receive attributed direct-checkout links in one JSON call.',
+        partner_heading: 'Why Top Global DTC Brands & Affiliate Networks Partner with 1000Home',
+        partner_sub: 'Operated by Guangzhou Smarthome Technology Co., Ltd. (广州智家科技有限公司), www.1000home.com combines 20+ years of smart home industry expertise with an AI-native 8-App discovery matrix engineered for high-intent North American residential consumers.',
+        seed_table_title: '🏡 Featured North American Residential Verticals & Curated Brand Ecosystem',
+        support_heading: 'Official App Support & Compliance Documentation',
+        support_sub: 'This section provides the mandatory Support URL, Privacy Policy URL, and Corporate Contact Verification for Apple App Store Connect review and global e-commerce affiliate networks.',
+        faq_title: 'Frequently Asked Questions (VibeDrop & 1000Home Apps)',
+        corp_card_badge: 'OFFICIAL OPERATOR & DEVELOPER SUPPORT CONTACT',
+        footer_desc: 'AI-Native Lifestyle Advocacy & Residential Shopping Guide Platform for North America. Powered by the Eight Titans App Matrix.',
+        footer_addr_title: 'Corporate Headquarters & Address',
+        footer_contact_title: 'Partner & App Support'
+      },
+      zh: {
+        nav_portal: '🚀 八大金刚矩阵与网页门户',
+        nav_vibedrop: '✨ VibeDrop 首发旗舰',
+        nav_agent: '🤖 AI Agent 数据接口',
+        nav_partners: '🤝 北美推广实力与招商资质',
+        nav_support: '🛡️ 苹果开发者支持与隐私条款',
+        hero_badge: '⚡ 终结传统搜索电商 · 八大金刚灵感盲盒 APP 矩阵 + AI 智能体接口',
+        hero_cta_primary: '✨ 体验 #1 VibeDrop 灵感盲盒网页版',
+        hero_cta_agent: '🤖 查看 AI Agent 专用数据接口',
+        hero_cta_partner: '📈 海外电商合作伙伴实力证明',
+        stat_1: '家庭全生命周期八大垂直 APP',
+        stat_2: '北美精选家居与极客潮玩 SKU',
+        stat_3: '端侧大模型毫秒级意图收敛',
+        stat_4: '1首选 + 2备选 & 空间套餐包',
+        flagship_pill: '#1 首发旗舰 APP · 已完成开发待上架',
+        vibedrop_short_desc: '桌面潮玩 · 美国别墅智能照明 · 治愈系卧室 · 智能养宠与男人后院车库神器',
+        qr_caption: '苹果扫码下载槽位 (留空待填)',
+        btn_ios_reserved: 'App Store 下载 (链接留空 · 待正式上架后填入)',
+        btn_android_soon: 'Android 安卓版本 (下一阶段上线)',
+        btn_agent_interface: 'AI Agent 专用数据接口 (MCP / REST)',
+        matrix_eyebrow: '八大金刚海外电商导购矩阵 · THE EIGHT TITANS APP MATRIX',
+        matrix_heading: '一套共享离线大模型引擎，八大北美家庭消费超级入口',
+        matrix_note: '目前第 1 款 VibeDrop 已完成开发（苹果商店下载链接留空待填）；其余 7 款 APP 仅展示首推中英文名称、主色系与涉及品类，下载链接与详情留空等待后续更新。',
+        webdemo_badge: '✨ #1 VIBEDROP 网页版在线体验 · 独创四维槽位实时漏斗推理对话框',
+        webdemo_title: '在线体验 VibeDrop 三步推理收敛与「1+2 灵感盲盒」直通导购',
+        webdemo_desc: '点选下方空间槽位或拖动预算滑块，实时感受本地 AI 引擎如何从亚马逊、Kickstarter/Indiegogo 众筹及中国出海独立站中秒级锁定 1 首选 + 2 备选方案。',
+        funnel_label: '实时候选池坍缩漏斗',
+        slot1_title: '📍 1. 物理空间锚点',
+        slot2_title: '✨ 2. 情绪与功能靶向',
+        slot3_title: '🛡️ 3. AI 防踩坑排雷约束',
+        slot4_title: '💵 4. 冲动预算上限',
+        agent_heading: '面向全球个人智能体 (AI Agents) 的专用结构化导购数据接口',
+        agent_sub: '除 iOS 与 Android 客户端外，www.1000home.com 原生提供针对 AI Agent 的 MCP 与 REST 数据协议，支持外部个人智能体一键调取 1+2 推荐结果与直通购买归因链接。',
+        partner_heading: '为什么全球顶级出海 DTC 独立站与北美联盟网络选择 1000Home？',
+        partner_sub: '由广州智家科技有限公司 (Guangzhou Smarthome Technology Co., Ltd.) 运营，www.1000home.com 融合 20 余年智能家居产业积淀与 AI 原生八大 APP 导购矩阵，为北美住宅消费品提供极高转化率的精准推广服务。',
+        seed_table_title: '🏡 北美四大黄金住宅消费赛道与精选合作伙伴品牌矩阵',
+        support_heading: '苹果 App Store 开发者官方支持中心与隐私合规声明',
+        support_sub: '本页面提供 Apple App Store Connect 审核及海外电商联盟（Impact / Awin / Shopify Collabs / Amazon）资质认证所需的官方技术支持、隐私政策与企业联系信息。',
+        faq_title: '常见问题解答 (FAQ — VibeDrop & 1000Home 矩阵)',
+        corp_card_badge: '官方运营主体与开发者联系方式 (Corporate Verification)',
+        footer_desc: '面向北美市场的新生活方式倡导与 AI 灵感盲盒购物指南平台 · 八大金刚 APP 矩阵官方门户。',
+        footer_addr_title: '公司注册与办公地址 (Address)',
+        footer_contact_title: '商务合作与技术支持 (Contact)'
+      }
+    };
+
+    const EIGHT_TITANS = [
+      {
+        rank: 1,
+        status: 'ACTIVE_FLAGSHIP',
+        enName: 'VibeDrop',
+        zhName: '灵感盲盒',
+        categoryEn: 'Room Vibe & Tech Mystery Picks (Desk Setup, Villa Smart Lighting, Cozy Decor)',
+        categoryZh: 'Room灵感·盲盒（桌面潮玩 / 美国别墅智能照明 / 卧室光影氛围小产品）',
+        colorNameEn: 'Neon Magenta-Purple',
+        colorNameZh: '紫红色 (手稿已定)',
+        hex: '#EC4899',
+        borderClass: 'border-[#EC4899]',
+        badgeBg: 'bg-[#EC4899] text-black',
+        isBuilt: true
+      },
+      {
+        rank: 2,
+        status: 'RESERVED',
+        enName: 'StyleDrop',
+        zhName: '潮搭盲盒',
+        categoryEn: 'Apparel & Capsule Wardrobe (Occasion Outfits, Techwear, Accessories)',
+        categoryZh: '衣物服饰（场合穿搭 OOTD / AI 胶囊衣橱 / 城市机能潮服配饰）',
+        colorNameEn: 'Couture Rose-Crimson & Gold',
+        colorNameZh: '绯红香槟金',
+        hex: '#F43F5E',
+        borderClass: 'border-[#F43F5E]/60',
+        badgeBg: 'bg-[#F43F5E]/20 text-rose-300 border border-[#F43F5E]/40',
+        isBuilt: false
+      },
+      {
+        rank: 3,
+        status: 'RESERVED',
+        enName: 'ChefDrop',
+        zhName: '料理盲盒',
+        categoryEn: 'Kitchen & Coffee Bar Tech (Smart Appliances, Espresso Gear, Cookware)',
+        categoryZh: '厨房用品（现代智能厨电 / 家庭精品咖啡角 / 省力料理黑科技）',
+        colorNameEn: 'Flame Espresso Orange',
+        colorNameZh: '火焰琥珀橙',
+        hex: '#F97316',
+        borderClass: 'border-[#F97316]/60',
+        badgeBg: 'bg-[#F97316]/20 text-orange-300 border border-[#F97316]/40',
+        isBuilt: false
+      },
+      {
+        rank: 4,
+        status: 'RESERVED',
+        enName: 'TrailDrop',
+        zhName: '野趣盲盒',
+        categoryEn: 'Outdoor, Yard & Garage Gear (Robotic Mowers, Pool Bots, Overlanding, Tools)',
+        categoryZh: '户外用品（美国后院花园割草 / 无线泳池清洁 / 露营储能 / 车库工具）',
+        colorNameEn: 'Tactical Solar Gold',
+        colorNameZh: '熔岩战术金',
+        hex: '#EAB308',
+        borderClass: 'border-[#EAB308]/60',
+        badgeBg: 'bg-[#EAB308]/20 text-yellow-300 border border-[#EAB308]/40',
+        isBuilt: false
+      },
+      {
+        rank: 5,
+        status: 'RESERVED',
+        enName: 'VitalDrop',
+        zhName: '元气盲盒',
+        categoryEn: 'Health & Wellness (Sleep Tech, Red-Light Therapy, Muscle Recovery)',
+        categoryZh: '健康·养生（深度助眠科技 / 居家红光理疗 / 运动筋膜康复与身心疗愈）',
+        colorNameEn: 'Bio-Vitality Emerald Green',
+        colorNameZh: '绿色·森林翡翠绿 (手稿已定)',
+        hex: '#10B981',
+        borderClass: 'border-[#10B981]/60',
+        badgeBg: 'bg-[#10B981]/20 text-emerald-300 border border-[#10B981]/40',
+        isBuilt: false
+      },
+      {
+        rank: 6,
+        status: 'RESERVED',
+        enName: 'CareDrop',
+        zhName: '颐养盲盒',
+        categoryEn: 'Senior Care & Aging-in-Place (Fall-Detection Radar, Mobility & Bath Safety)',
+        categoryZh: '银发产品（适老化智能居家改造 / 毫米波防跌倒看护 / 独立养老辅助）',
+        colorNameEn: 'Serene Care Teal-Blue',
+        colorNameZh: '蓝·绿色 (手稿已定)',
+        hex: '#06B6D4',
+        borderClass: 'border-[#06B6D4]/60',
+        badgeBg: 'bg-[#06B6D4]/20 text-cyan-300 border border-[#06B6D4]/40',
+        isBuilt: false
+      },
+      {
+        rank: 7,
+        status: 'RESERVED',
+        enName: 'PawDrop',
+        zhName: '萌宠盲盒',
+        categoryEn: 'Smart Pet Tech & Fur-Baby Lifestyle (Auto Litter Boxes, RFID Fountains, Pet Bots)',
+        categoryZh: '萌宠智能生活（全自动猫砂盆 / RFID 智能饮水喂食 / 远程激光逗宠机器人）',
+        colorNameEn: 'Playful Coral-Peach',
+        colorNameZh: '暖阳珊瑚粉橘',
+        hex: '#FF6B6B',
+        borderClass: 'border-[#FF6B6B]/60',
+        badgeBg: 'bg-[#FF6B6B]/20 text-red-300 border border-[#FF6B6B]/40',
+        isBuilt: false
+      },
+      {
+        rank: 8,
+        status: 'RESERVED',
+        enName: 'WonderDrop',
+        zhName: '童趣盲盒',
+        categoryEn: 'Baby Nursery & STEAM Toy Box (Smart Baby Monitors, Coding Kits, 3D Toys)',
+        categoryZh: '母婴童趣与益智成长（智能婴儿房看护 / 蒙氏早教 / 少儿 STEAM 创客玩具）',
+        colorNameEn: 'Starlight Royal Blue',
+        colorNameZh: '星空电光蓝',
+        hex: '#3B82F6',
+        borderClass: 'border-[#3B82F6]/60',
+        badgeBg: 'bg-[#3B82F6]/20 text-blue-300 border border-[#3B82F6]/40',
+        isBuilt: false
+      }
+    ];
+
+    const WEB_DEMO_SCENES = {
+      desk: {
+        vibeEn: 'Retro Pixel Art Display + Transparent Cyber Fast-Charge',
+        vibeZh: '复古像素艺术互动屏 + 全透明赛博磁吸快充',
+        guardEn: 'Apple Mac Native + Single USB-C Clean Routing',
+        guardZh: 'Apple Mac 原生兼容 + 单根 USB-C 极简供电',
+        items: [
+          { role: '🏆 PRIMARY SOUL PICK (98%)', title: 'Divoom Pixoo-64 II WiFi 64x64 Pixel Art Display', brand: 'Divoom Official DTC', price: 109.99, url: 'https://divoom.com/products/pixoo-64', descEn: 'Cult-favorite 64x64 WiFi pixel frame with live X/YouTube counters, crypto tickers & community pixel art.', descZh: '北美桌面潮玩首选！支持 WiFi 实时显示社媒粉丝、美股/加密行情与全球极客像素画社区。' },
+          { role: '🚀 BACKUP 1 · KICKSTARTER GEM (95%)', title: 'SHARGE ICEMAG 2 Qi2 Active-Cooling Power Bank', brand: 'SHARGE Official DTC', price: 79.90, url: 'https://sharge.com/products/icemag-2', descEn: 'Born on Kickstarter: transparent cyberpunk PCB shell with RGB active cooling fan and Qi2 magnetic fast charging.', descZh: '源自 Kickstarter 百万美金众筹传奇，全透明赛博 PCB 外壳配主动涡轮散热风扇。' },
+          { role: '💎 BACKUP 2 · VIRAL DTC STEAL (92%)', title: 'Govee RGBIC LED Strip Lights (Matter Enabled)', brand: 'Govee US Official', price: 39.99, url: 'https://us.govee.com/collections/strip-lights', descEn: ' segmented RGBIC warm sunset backlight with Apple Home & Matter voice control under $40.', descZh: '不到 $40 打造胡桃木桌面落日氛围背光，原生支持 Matter 与 Apple Home。' }
+        ]
+      },
+      villa: {
+        vibeEn: 'Permanent Roofline Holiday & Curb-Appeal Architectural Lighting',
+        vibeZh: '美国独栋别墅免爬梯永装屋檐灯 + 节日/超级碗 AI 光效',
+        guardEn: 'IP67 Weatherproof + Security Camera Radar Sync',
+        guardZh: 'IP67 级防暴雨防晒 + 安防摄像头雷达联动',
+        items: [
+          { role: '🏆 PRIMARY SOUL PICK (99%)', title: 'eufy Permanent Outdoor Lights E22 (100ft Triple-LED)', brand: 'eufy US Official Store', price: 199.99, url: 'https://www.eufy.com/products/t8l02121', descEn: 'Install once, never climb a ladder again. Triple-LED (1500K-9000K) with WonderLink security camera radar sync.', descZh: '一次粘贴十年免爬梯！三灯珠设计兼具日常豪宅暖白洗墙与安防摄像头联动警戒。' },
+          { role: '🚀 BACKUP 1 · PRO ARCHITECTURAL (96%)', title: 'Govee Permanent Outdoor Lights Pro (100ft Matter)', brand: 'Govee US Official', price: 279.99, url: 'https://us.govee.com/products/govee-rgbicww-led-permanent-outdoor-lights', descEn: 'Cuttable roofline lighting with iconic triangular wall-wash cones and Matter smart home integration.', descZh: '北美别墅爆款，投射建筑级三角洗墙光斑，支持自由裁剪与全屋 Matter 联动。' },
+          { role: '💎 BACKUP 2 · CEILING UPGRADE (93%)', title: 'Lumary Smart RGBAI Canless Recessed Lights (4-Pack)', brand: 'Lumary Smart Official', price: 109.99, url: 'https://www.lumarysmart.com/', descEn: 'Zero-can spring-clip retrofit for US timber ceilings with dual-mode ambient night ring + main downlight.', descZh: '专为北美木结构别墅吊顶设计的免灯筒超薄智能筒灯，30分钟改造杜比影院氛围。' }
+        ]
+      },
+      pet: {
+        vibeEn: 'Roaming 2K Laser Pet Companion & Odor-Free Litter Automation',
+        vibeZh: '上班族远程移动找猫激光逗宠 + 公寓 15 天零臭味免铲屎',
+        guardEn: '100% Anti-Pinch Safety + Whisper-Quiet Motor',
+        guardZh: '100% 防卡猫安全结构 + 卧室级超静音运行',
+        items: [
+          { role: '🏆 PRIMARY SOUL PICK (99%)', title: 'Enabot EBO Air 2 Plus 2K AI Companion Robot', brand: 'Enabot Official Store', price: 199.00, url: 'https://store.enabot.com/products/ebo-air-2-plus-familybot', descEn: 'Tumbler-style roaming home robot with 2K night-vision camera, 2-way audio, and remote pet laser teaser.', descZh: '不倒翁全屋静音移动巡逻，上班随时遥控钻沙发底找猫并开启激光互动。' },
+          { role: '🚀 BACKUP 1 · HYDRATION & FEED COMBO (96%)', title: 'Petlibro Granary Camera Feeder + Dockstream 2 Fountain', brand: 'Petlibro Official DTC', price: 169.99, url: 'https://petlibro.com/products/granary-smart-camera-feeder-dockstream-2-smart-fountain', descEn: 'Minimalist Apple-grade smart camera feeder paired with a cordless induction-pump water fountain.', descZh: '不到 $170 一站配齐高清视频定时喂食器与无线水泵净水饮水机。' },
+          { role: '💎 BACKUP 2 · ODOR-FREE SEALER (93%)', title: 'PETKIT AutoSeal Heat-Sealing Cat Litter Disposal Bin', brand: 'PETKIT US Official', price: 89.99, url: 'https://www.petkit.com/products/autoseal-cat-litter-disposal-system', descEn: 'Touch-free automatic lid and one-tap thermoplastic heat-sealing locks away litter odor for 15 days.', descZh: '自动感应开盖并热塑封口猫砂袋，公寓养猫 15 天零臭味不脏手。' }
+        ]
+      },
+      yard: {
+        vibeEn: 'American Dad Garage EDC Tools & Wire-Free Backyard Automation',
+        vibeZh: '美国男人车库红点奖数码工具 + 后院免埋线割草/无线泳池黑科技',
+        guardEn: 'Red Dot Award Industrial Design + LiFePO4 / Cordless',
+        guardZh: '红点奖工业设计 + 100% 无线免布线',
+        items: [
+          { role: '🏆 PRIMARY SOUL PICK (99%)', title: 'Fanttik X8 APEX Digital Tire Inflator + Electric Screwdriver Kit', brand: 'Fanttik Official Store', price: 129.98, url: 'https://fanttik.com/products/x8-apex-tire-inflator', descEn: '27-second fast pickup/SUV tire inflation + magnetic pop-out precision electric screwdriver set.', descZh: '把五金工具做成赛博潮玩！27秒极速充气泵 + 磁吸铝合金无级变速精密电批礼盒。' },
+          { role: '🚀 BACKUP 1 · CORDLESS POOL BOT (95%)', title: 'Beatbot / Aiper Cordless Robotic Pool Cleaner (Wall & Waterline)', brand: 'Beatbot Official Store', price: 599.00, url: 'https://beatbot.com/', descEn: '100% cordless floor, wall, and waterline scrubbing with automatic surface side-parking.', descZh: '彻底告别缠绕水管，全无线池底+池壁+水线三合一刷洗，洗完自动靠岸停泊。' },
+          { role: '💎 BACKUP 2 · WIRE-FREE AWD MOWER (94%)', title: 'Mammotion LUBA mini 2 AWD LiDAR + RTK Robot Lawn Mower', brand: 'Mammotion US Official', price: 1499.00, url: 'https://us.mammotion.com/products/luba-mini-2-awd-robot-lawn-mower', descEn: 'Zero perimeter wire required. 360° LiDAR + RTK all-wheel drive conquers 80% (38.6°) slopes.', descZh: '无需挖沟埋线，360° 激光雷达 + 四驱越障轻松爬 80% 陡坡并支持草坪印花。' }
+        ]
+      }
+    };
+
+    function renderEightTitansGrid() {
+      const grid = document.getElementById('eightTitansGrid');
+      if (!grid) return;
+      grid.innerHTML = '';
+
+      EIGHT_TITANS.forEach((app) => {
+        const isEn = currentLang === 'en';
+        const card = document.createElement('div');
+        card.className = `glass-panel rounded-3xl p-5 border-2 ${app.borderClass} flex flex-col justify-between space-y-4 transition-all hover:-translate-y-0.5`;
+
+        const statusBadge = app.isBuilt
+          ? (isEn ? '#1 FLAGSHIP · BUILT' : '#1 首发旗舰 · 已开发完成')
+          : (isEn ? `#${app.rank} · LINKS RESERVED` : `#${app.rank} · 留空待更新`);
+
+        const catText = isEn ? app.categoryEn : app.categoryZh;
+        const colText = isEn ? app.colorNameEn : app.colorNameZh;
+
+        const actionArea = app.isBuilt
+          ? `
+            <div class="space-y-2 pt-3 border-t border-white/10">
+              <div class="flex items-center justify-between text-[11px]">
+                <span class="text-gray-400">${isEn ? 'iOS App Store:' : '苹果 App Store:'}</span>
+                <button onclick="showPendingDownloadToast('VibeDrop iOS')" class="text-pink-400 font-bold hover:underline">
+                  ${isEn ? '[Link Reserved · Pending Release]' : '[链接留空 · 待正式上架]'}
+                </button>
+              </div>
+              <div class="flex items-center justify-between text-[11px]">
+                <span class="text-gray-400">${isEn ? 'AI Agent API:' : 'AI Agent 接口:'}</span>
+                <button onclick="navigateSection('agent')" class="text-cyan-300 font-mono font-bold hover:underline">
+                  /api/v1/agent/vibedrop ↗
+                </button>
+              </div>
+              <button onclick="navigateSection('vibedrop')" class="w-full mt-1 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-amber-500 text-black font-extrabold text-xs shadow">
+                ${isEn ? '⚡ Open VibeDrop Web Portal' : '⚡ 打开 VibeDrop 网页版导购'}
+              </button>
+            </div>
+          `
+          : `
+            <div class="space-y-2 pt-3 border-t border-white/10 text-[11px] text-gray-500">
+              <div class="flex items-center justify-between">
+                <span>${isEn ? 'iOS / Android Links:' : 'iOS / 安卓下载链接:'}</span>
+                <span class="font-mono text-gray-400">${isEn ? '[Reserved / Blank]' : '[留空等待更新]'}</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span>${isEn ? 'AI Agent Endpoint:' : 'AI Agent 数据接口:'}</span>
+                <span class="font-mono text-gray-400">${isEn ? '[Reserved / Blank]' : '[留空等待更新]'}</span>
+              </div>
+              <div class="w-full py-2 rounded-xl bg-gray-900/90 border border-white/5 text-center text-gray-400 font-semibold text-xs">
+                ${isEn ? '⏳ Category & Name Locked · Details Pending' : '⏳ 名称与品类已锁定 · 详情留空待更新'}
+              </div>
+            </div>
+          `;
+
+        card.innerHTML = `
+          <div class="space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full ${app.badgeBg}">
+                ${statusBadge}
+              </span>
+              <span class="w-5 h-5 rounded-full border border-white/40 shrink-0" style="background:${app.hex}"></span>
+            </div>
+            <div>
+              <div class="flex items-baseline gap-2">
+                <h3 class="text-xl font-black text-white">${app.enName}</h3>
+                <span class="text-sm font-bold text-gray-300">${app.zhName}</span>
+              </div>
+              <div class="text-[11px] font-mono mt-0.5" style="color:${app.hex}">
+                🎨 ${colText} (${app.hex})
+              </div>
+            </div>
+            <p class="text-xs text-gray-300 leading-relaxed">
+              ${catText}
+            </p>
+          </div>
+          ${actionArea}
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function selectWebDemoScene(sceneKey) {
+      currentDemoScene = sceneKey;
+      ['desk', 'villa', 'pet', 'yard'].forEach((k) => {
+        const btn = document.getElementById('demoSceneBtn-' + k);
+        if (btn) {
+          btn.className = k === sceneKey
+            ? 'px-2.5 py-1.5 rounded-lg text-xs font-bold bg-pink-500 text-black'
+            : 'px-2.5 py-1.5 rounded-lg text-xs font-semibold glass-pill text-gray-300';
+        }
+      });
+      renderWebDemoCards();
+    }
+
+    function updateWebDemoBudget(val) {
+      currentDemoBudget = Number(val);
+      document.getElementById('demoBudgetLabel').textContent = '$' + currentDemoBudget + ' USD';
+      renderWebDemoCards();
+    }
+
+    function renderWebDemoCards() {
+      const scene = WEB_DEMO_SCENES[currentDemoScene];
+      if (!scene) return;
+      const isEn = currentLang === 'en';
+
+      document.getElementById('demoVibeTag').textContent = isEn ? scene.vibeEn : scene.vibeZh;
+      document.getElementById('demoGuardTag').textContent = isEn ? scene.guardEn : scene.guardZh;
+
+      const grid = document.getElementById('webDemoCardsGrid');
+      grid.innerHTML = '';
+
+      scene.items.forEach((item, idx) => {
+        const within = item.price <= currentDemoBudget;
+        const budgetPill = within
+          ? `<span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">✓ ${isEn ? 'Within Budget' : '预算内'}</span>`
+          : `<span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 font-bold">${isEn ? 'High-Ticket Upgrade' : '高客单升级款'}</span>`;
+
+        const borderCol = idx === 0 ? 'border-pink-500/60' : (idx === 1 ? 'border-cyan-500/50' : 'border-amber-500/50');
+        const card = document.createElement('div');
+        card.className = `p-5 rounded-3xl bg-gray-900/95 border-2 ${borderCol} flex flex-col justify-between space-y-4`;
+        card.innerHTML = `
+          <div class="space-y-2.5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-extrabold text-amber-300">${item.role}</span>
+              ${budgetPill}
+            </div>
+            <div class="text-[11px] text-gray-400 font-mono">${item.brand}</div>
+            <h3 class="text-base font-extrabold text-white leading-snug">${item.title}</h3>
+            <p class="text-xs text-gray-300 leading-relaxed">${isEn ? item.descEn : item.descZh}</p>
+          </div>
+          <div class="pt-3 border-t border-white/10 flex items-center justify-between">
+            <span class="text-xl font-black text-white">$${item.price.toFixed(2)}</span>
+            <a href="${item.url}" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-gradient-to-r from-pink-500 to-amber-500 text-black font-extrabold text-xs shadow hover:brightness-110">
+              ${isEn ? '⚡ Direct Buy ↗' : '⚡ 直通官网下单 ↗'}
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'zh' : 'en';
+      const dict = I18N[currentLang];
+      document.querySelectorAll('[data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+
+      if (currentLang === 'zh') {
+        document.getElementById('headerTagline').textContent = '北美新生活方式倡导与八大金刚 AI 灵感盲盒导购平台';
+        document.getElementById('heroTitle').innerHTML = '告别翻找一万条同质化商品。<br/><span class="bg-gradient-to-r from-pink-400 via-amber-300 to-cyan-400 bg-clip-text text-transparent">2 秒开启你的北美居家生活「1+2 灵感盲盒」。</span>';
+        document.getElementById('heroSubtitle').innerHTML = '<strong>1000Home (www.1000home.com)</strong> 是由 <strong>广州智家科技有限公司 (Guangzhou Smarthome Technology Co., Ltd.)</strong> 打造的北美新生活方式倡导与 AI 导购平台。依托独创的<strong>「四维槽位·实时漏斗推理型对话框」</strong>与共享离线大模型（<code>group.com.robotzero.shared.ai</code>），以<strong>「八大金刚」独立 APP 矩阵</strong>与 <strong>AI Agent 专用数据接口</strong>，为北美家庭提供直通亚马逊、Kickstarter/Indiegogo 众筹与出海独立站的精准导购服务。';
+      } else {
+        document.getElementById('headerTagline').textContent = 'North America AI-Native Home & Lifestyle Shopping Matrix';
+        document.getElementById('heroTitle').innerHTML = 'Stop Scrolling 10,000 Listings.<br/><span class="bg-gradient-to-r from-pink-400 via-amber-300 to-cyan-400 bg-clip-text text-transparent">Unbox Your Home’s Next Vibe in 2 Seconds.</span>';
+        document.getElementById('heroSubtitle').innerHTML = '<strong>1000Home (www.1000home.com)</strong> is North America’s premier AI-native residential lifestyle &amp; impulse shopping guide platform. Powered by our proprietary <strong>4-Slot Reasoning Funnel</strong> and shared on-device LLM architecture (<code>group.com.robotzero.shared.ai</code>), our <strong>"Eight Titans" App Matrix</strong> collapses 142,800+ products across Amazon US, Kickstarter, Indiegogo, and viral DTC brands into <strong>1 Soul Pick + 2 Backups</strong> and turnkey spatial bundles.';
+      }
+
+      renderEightTitansGrid();
+      renderWebDemoCards();
+    }
+
+    function navigateSection(secKey) {
+      const map = {
+        portal: 'sec-portal',
+        vibedrop: 'sec-vibedrop',
+        agent: 'sec-agent',
+        partners: 'sec-partners',
+        support: 'sec-support'
+      };
+      const targetId = map[secKey];
+      const el = document.getElementById(targetId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      ['portal', 'vibedrop', 'agent', 'partners', 'support'].forEach((k) => {
+        const btn = document.getElementById('navBtn-' + k);
+        if (btn) {
+          btn.className = k === secKey
+            ? 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all bg-gradient-to-r from-pink-500 to-amber-500 text-black shadow'
+            : 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-gray-300 hover:text-white';
+        }
+      });
+    }
+
+    function switchLegalTab(tabKey) {
+      ['support', 'privacy', 'terms'].forEach((k) => {
+        const view = document.getElementById('legalView-' + k);
+        const btn = document.getElementById('legalBtn-' + k);
+        if (view && btn) {
+          if (k === tabKey) {
+            view.classList.remove('hidden');
+            btn.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-500 text-black';
+          } else {
+            view.classList.add('hidden');
+            btn.className = 'px-3 py-1.5 rounded-lg text-xs font-semibold text-gray-300 hover:text-white';
+          }
+        }
+      });
+    }
+
+    function showPendingDownloadToast(label) {
+      const banner = document.getElementById('downloadNoticeBanner');
+      if (!banner) return;
+      banner.textContent = currentLang === 'en'
+        ? `ℹ️ [${label}]: Download link slot is reserved as requested. Once VibeDrop is approved on Apple App Store Connect, replace data-appstore-url to activate instant redirect.`
+        : `ℹ️ [${label}]：按您的要求，当前苹果商店下载链接槽位已预留留空，待 App Store 正式过审上架后填入 URL 即可一键激活跳转。`;
+      banner.classList.remove('hidden');
+    }
+
+    function copyAgentCurl() {
+      const block = document.getElementById('agentCurlBlock');
+      if (!block) return;
+      const ta = document.createElement('textarea');
+      ta.value = block.textContent;
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+      const notice = document.getElementById('agentCopyNotice');
+      if (notice) {
+        notice.classList.remove('hidden');
+        setTimeout(() => notice.classList.add('hidden'), 3000);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderEightTitansGrid();
+      renderWebDemoCards();
+    });
+  </script>
+</body>
+</html>
